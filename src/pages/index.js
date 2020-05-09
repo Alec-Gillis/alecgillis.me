@@ -1,14 +1,17 @@
-import React from "react"
-import Header from "../components/header"
-import MasterHead from "../components/masterhead"
+import React from 'react'
+import { Link } from 'gatsby'
+//import Header from "../components/header"
+//import MasterHead from "../components/masterhead"
 
-export default function Home() {
+const IndexPage = () => {
   return (
-    <div style={{ color: `purple` }}>
-      <MasterHead />
-      <h1>Hello Gatsby!</h1>
-      <Header headerText="About Gatsby" />
-      <p>What a world.</p>
+    <div>
+      <h1>Hello</h1>
+      <h2>I'm Alec, a computer science student at Michigan State University.</h2>
+      <Link to="/about">About Me</Link>
     </div>
-  );
+  )
 }
+
+
+export default IndexPage
