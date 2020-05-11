@@ -1,5 +1,37 @@
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
 
-export default function Header(props) {
-  return <h1>{props.headerText}</h1>
+import headerStyles from './header.module.scss'
+
+const Header = () => {
+    return (
+      <header className={headerStyles.header}>
+        <h1>
+            <Link className={headerStyles.title} to="/">
+                Alec Gillis
+            </Link>
+        </h1>
+        <nav>
+            <ul className={headerStyles.navList}>
+                <li>
+                    <Link className={headerStyles.navItem} to="/">Home</Link>
+                </li>
+                <li>
+                    <Link className={headerStyles.navItem} to="/about">About</Link>
+                </li>
+                <li>
+                    <Link className={headerStyles.navItem} to="/contact">Contact</Link>
+                </li>
+                <li>
+                    <Link className={headerStyles.navItem} to="/now">Now</Link>
+                </li>
+                <li>
+                    <Link className={headerStyles.navItem} to="/books">Books</Link>
+                </li>
+            </ul>
+        </nav>
+      </header>
+    )
 }
+
+export default Header

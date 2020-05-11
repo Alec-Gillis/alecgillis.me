@@ -1,8 +1,11 @@
-import React from "react"
+import React from 'react'
+
+import Header from '../components/header'
 
 const AboutPage = () => {
     return (
         <div>
+            <Header />
             <h1>About Me</h1>
             <p>
                 I'm a student at Michigan State University. I will be graduating in December 2020

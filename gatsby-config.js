@@ -1,10 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Alec Gillis (dot me)`,
+    description: `I'm Alec Gillis, a programmer.`,
+    author: `Alec Gillis`,
+  },
+  plugins: [
+    'gatsby-plugin-sass'
+  ],
 }
