@@ -1,7 +1,8 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 
-import Header from '../components/header'
+import Layout from '../components/layout'
+import blogStyles from './blog.module.scss'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -11,7 +12,9 @@ const BlogPage = () => {
                     node {
                         frontmatter {
                             title
-                            
+                        }
+                        fields {
+                            slug
                         }
                     }
                 }
@@ -20,20 +23,21 @@ const BlogPage = () => {
     `)
     
     return (
-        <div>
-            <Header />
-            <h1>Blogs</h1>
-            <ol>
+        <Layout>
+            <h1>Blog</h1>
+            <ol className={blogStyles.posts}>
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
-                        <li>
-                            <h2>{edge.node.frontmatter.title}</h2>
+                        <li className={blogStyles.post}>
+                            <Link to={`/blog/${edge.node.fields.slug}`}>
+                                <h2>{edge.node.frontmatter.title}</h2>
+                            </Link>
                             <p>TODO: Extract date from filename & display here</p>
                         </li>
                     )
                 })}
             </ol>
-        </div>
+        </Layout>
     )
 }
 

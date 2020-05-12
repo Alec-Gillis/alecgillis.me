@@ -1,11 +1,12 @@
 import React from "react"
 
+import Layout from '../components/layout'
 
 const BooksPage = () => {
     return (
-        <div>
+        <Layout>
             <h1>This page will show books I have read.</h1>
-        </div>
+        </Layout>
     )
 }
 
