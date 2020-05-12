@@ -33,6 +33,9 @@ const Header = () => {
                     <Link className={headerStyles.navItem} to="/contact">Contact</Link>
                 </li>
                 <li>
+                    <Link className={headerStyles.navItem} to="/blog">Blog</Link>
+                </li>
+                <li>
                     <Link className={headerStyles.navItem} to="/now">Now</Link>
                 </li>
                 <li>

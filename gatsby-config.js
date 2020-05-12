@@ -5,6 +5,14 @@ module.exports = {
     author: `Alec Gillis`,
   },
   plugins: [
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `markdown-posts`,
+        path: `${__dirname}/src/markdown-posts`
+      }
+    },
+    'gatsby-transformer-remark'
   ],
 }

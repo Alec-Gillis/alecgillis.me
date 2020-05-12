@@ -8,10 +8,10 @@ const ContactPage = () => {
             <ul>
                 <li>Email: gillisa3@msu.edu</li>
                 <li>LinkedIn: 
-                    <a href="https://www.linkedin.com/in/alexanderdgillis" target="_blank">Alec Gillis</a>
+                    <a href="https://www.linkedin.com/in/alexanderdgillis" target="_blank" rel="noopener">Alec Gillis</a>
                 </li>
                 <li>GitHub: 
-                    <a href="https://github.com/Alec-Gillis" target="_blank">Alec-Gillis</a>
+                    <a href="https://github.com/Alec-Gillis" target="_blank" rel="noopener">Alec-Gillis</a>
                 </li>
             </ul>
         </div>
