@@ -8,6 +8,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./static/favicon.png"
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: `markdown-posts`,
