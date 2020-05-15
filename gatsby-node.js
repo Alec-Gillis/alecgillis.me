@@ -5,7 +5,10 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 	if (node.internal.type === 'MarkdownRemark') {
 		const basename = path.basename(node.fileAbsolutePath, '.md')
-		const slug = basename.substring(11)
+		let slug = basename.substring(11)
+		if (!slug) {
+			slug = basename
+		}
 
 		createNodeField({
 			node,

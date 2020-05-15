@@ -13,6 +13,7 @@ const BlogPage = () => {
                     node {
                         frontmatter {
                             title
+                            layout
                         }
                         fields {
                             slug
@@ -22,13 +23,15 @@ const BlogPage = () => {
             }
         }
     `)
-    
+
     return (
         <Layout>
             <Head title='Blog'/>
             <h1>Blog</h1>
             <ol className={blogStyles.posts}>
-                {data.allMarkdownRemark.edges.map((edge) => {
+                {data.allMarkdownRemark.edges
+                .filter( edge => edge.node.frontmatter.layout === "post")
+                .map( edge => {
                     return (
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.fields.slug}`}>
