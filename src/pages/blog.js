@@ -4,6 +4,8 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
 import Head from '../components/head'
+import moment from 'moment'
+import * as path from 'path'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -18,6 +20,7 @@ const BlogPage = () => {
                         fields {
                             slug
                         }
+                        fileAbsolutePath
                     }
                 }
             }
@@ -37,7 +40,8 @@ const BlogPage = () => {
                             <Link to={`/blog/${edge.node.fields.slug}`}>
                                 <h2>{edge.node.frontmatter.title}</h2>
                             </Link>
-                            <p>TODO: Extract date from filename & display here</p>
+                            <p>{moment(Date(path.basename(edge.node.fileAbsolutePath).substr(0,10))).format("MMMM do, yyyy")}</p>
+
                         </li>
                     )
                 })}
