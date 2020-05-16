@@ -16,12 +16,15 @@ const Header = () => {
 
     return (
       <header className={headerStyles.header}>
-        <h1>
+        <h1 className={headerStyles.htitle}>
             <Link className={headerStyles.title} to="/">
                 {data.site.siteMetadata.author}
             </Link>
         </h1>
-        <nav>
+        <h2 className={headerStyles.snippit}>
+            Now with 30% more coffee!
+        </h2>
+        <nav className={headerStyles.nav}>
             <ul className={headerStyles.navList}>
                 <li>
                     <Link className={headerStyles.navItem} to="/">Home</Link>

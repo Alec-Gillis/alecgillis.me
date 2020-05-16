@@ -1,24 +1,67 @@
 .header {
-	padding: 1rem 0 3rem;
+	padding: 2.5rem 1.5rem;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20rem;
+	height: 100%;
+	color: rgba(255,255,255,.5);
+	background-color: #202020;
+	border-right: 0.2rem solid #88ff00;
+	font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana,Helvetica,sans-serif;
+}
+
+.htitle {
+	margin-bottom: 0;
+}
+
+
+.snippit {
+	color: rgba(255,255,255,.5);
+	max-width: 10rem;
+	padding-left: 4rem;
+	text-align: left;
+	margin-top: 0;
 }
 
 .title {
-	color: #000000;
+	color: #FFFFFF;
 	font-size: 3rem;
 	text-decoration: none;
+	margin-left: 1rem;
+	padding-bottom: 0;
+}
+
+.title:hover {
+	text-decoration: underline;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	margin-left: 3rem;
 }
 
 .nav-list {
-	display: flex;
+	display: inline-block;
 	list-style-type: none;
-	margin: 0;
+	margin: 1rem;
+	text-align: center;
+	color: #ffffff;
+	
 }
 
 .nav-item {
-	color: #999999;
+	color: #ffffff;
 	font-size: 1.3rem;
 	margin-right: 1.3rem;
-	text-decoration: dotted underline;
+	padding-bottom: 1.3rem;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	display: block;
 }
 
 .nav-item:hover {

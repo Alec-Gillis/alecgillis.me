@@ -7,7 +7,7 @@ const BooksPage = () => {
     return (
         <Layout>
             <Head title='Books'/>
-            <h1>This page will show books I have read.</h1>
+            <h1>Woah! This is kinda empty. Please come back later... </h1>
         </Layout>
     )
 }
