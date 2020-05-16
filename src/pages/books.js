@@ -7,7 +7,7 @@ const BooksPage = () => {
     return (
         <Layout>
             <Head title='Books'/>
-            <h1>Woah! This is kinda empty. Please come back later... </h1>
+            <h1>Woah! This is kinda empty. Quick, pretend that there's cool content. Come back later for real thing! </h1>
         </Layout>
     )
 }

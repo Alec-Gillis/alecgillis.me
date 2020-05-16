@@ -1,7 +1,18 @@
 .container {
-    margin-left: 250px;
+    //margin-left: 400px;
     margin: 0 auto;
+    padding-left: 5rem;
     max-width: 750px;
-    padding: 1rem;
+    padding-top: 3rem;
     font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana,Helvetica,sans-serif;
+    font-size: larger;
+}
+
+a {
+    text-decoration: dotted underline;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
 }
