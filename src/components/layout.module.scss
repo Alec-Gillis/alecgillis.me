@@ -1,11 +1,20 @@
 .container {
-    //margin-left: 400px;
     margin: 0 auto;
+    margin-left: 20rem;
     padding-left: 5rem;
     max-width: 750px;
     padding-top: 3rem;
-    font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana,Helvetica,sans-serif;
+    font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana, Helvetica,
+        sans-serif;
     font-size: larger;
+}
+
+/* Remove the padding on content when sidebar goes to top of screen */
+@media screen and (max-width: 700px) {
+    .container {
+        margin-left: 0;
+        padding-left: 2rem;
+    }
 }
 
 a {
