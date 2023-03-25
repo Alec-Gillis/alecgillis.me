@@ -41,5 +41,8 @@
   },
   "bugs": {
     "url": "https://github.com/Alec-Gillis/alecgillis.me/issues"
+  },
+  "volta": {
+    "node": "19.8.1"
   }
 }
