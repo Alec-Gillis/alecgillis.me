@@ -41,7 +41,7 @@
     "url": "https://github.com/Alec-Gillis/alecgillis.me/issues"
   },
   "volta": {
-    "node": "19.8.1",
-    "npm": "9.6.2"
+    "node": "20.0.0",
+    "npm": "9.6.5"
   }
 }
