@@ -1,39 +1,25 @@
 import React from "react"
 
-import Layout from "../components/layout"
-
-/*export const Head = ({ title }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <html lang="en" />
-      <title>Home</title>
-    </>
-  )
-}
-*/
+import { Layout } from "../components/layout"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <h2>I'm Alec Gillis, a programmer.</h2>
-      <h4>
-        Click the links on the sidebar to get where you need! This site is a
-        work in progress and was last updated August 12th, 2020.
-      </h4>
+      <h1>About Me</h1>
+      <p>I'm Alec Gillis, a programmer.</p>
+      <p>
+        I was born and raised in{" "}
+        <a href="https://www.michigan.org">the Mitten</a> and I'm currently
+        living in Chattanooga, TN. I graduated from{" "}
+        <a href="https://msu.edu/">Michigan State University</a>
+        with a degree in computer science and a minor in mathematics. Besides
+        programming I enjoy running, reading, listening to music, and learning
+        interesting things.
+      </p>
     </Layout>
   )
 }
 
-export default IndexPage
-
 export const Head = () => <title>Home</title>
+
+export default IndexPage
