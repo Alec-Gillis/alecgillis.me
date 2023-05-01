@@ -5,7 +5,6 @@ module.exports = {
     author: `Alec Gillis`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
