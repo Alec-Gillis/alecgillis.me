@@ -7,7 +7,7 @@ import moment from "moment"
 import * as path from "path"
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title

@@ -1,112 +1,112 @@
 .header {
-    padding: 2.5rem 1.5rem;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20rem;
-    height: 100%;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #202020;
-    border-right: 0.2rem solid #88ff00;
-    font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana, Helvetica,
-        sans-serif;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #202020;
+  border-right: 0.2rem solid #88ff00;
+  font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana, Helvetica,
+    sans-serif;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-    .header {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {
-        float: left;
-    }
+  .header {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
-    .header a {
-        text-align: center;
-        float: none;
-    }
+  .header a {
+    text-align: center;
+    float: none;
+  }
 }
 
 .htitle {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 // Use this on a div to post text under the headshot picture & shove the nav-items down
 .snippit {
-    color: rgba(255, 255, 255, 0.5);
-    max-width: 10rem;
-    padding-left: 4rem;
-    text-align: left;
-    margin-top: 0;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 10rem;
+  padding-left: 4rem;
+  text-align: left;
+  margin-top: 0;
 }
 
 .title {
-    color: #ffffff;
-    font-size: 3rem;
-    text-decoration: none;
-    margin-left: 1rem;
-    padding-bottom: 0;
+  color: #ffffff;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-left: 1rem;
+  padding-bottom: 0;
 }
 
 .title:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-left: 3rem;
 }
 
 .nav-list {
-    display: inline-block;
-    list-style-type: none;
-    margin: 1rem;
-    text-align: center;
-    color: #ffffff;
+  display: inline-block;
+  list-style-type: none;
+  margin: 1rem;
+  text-align: center;
+  color: #ffffff;
 }
 
 .nav-item {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin-right: 1.3rem;
-    padding-bottom: 1.3rem;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    display: block;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+  padding-bottom: 1.3rem;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: block;
 }
 
 .nav-item:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav-item:active {
-    position: relative;
-    top: 0.1rem;
+  position: relative;
+  top: 0.1rem;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .item {
-    width: 120px;
-    min-height: 120px;
-    max-height: auto;
-    float: left;
-    margin: 3px;
-    padding: 3px;
+  width: 120px;
+  min-height: 120px;
+  max-height: auto;
+  float: left;
+  margin: 3px;
+  padding: 3px;
 }
 
 .divNav {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }

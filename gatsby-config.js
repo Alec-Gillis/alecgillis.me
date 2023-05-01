@@ -8,38 +8,36 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-167318606-1"
-      }
+        trackingId: "UA-167318606-1",
+      },
     },
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./static/favicon.png"
-      }
+        logo: "./static/favicon.png",
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-            `Lato`,
-        ],
+        fonts: [`Lato`],
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         name: `markdown-posts`,
-        path: `${__dirname}/src/markdown-posts`
-      }
+        path: `${__dirname}/src/markdown-posts`,
+      },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`
-      }
+        path: `${__dirname}/src/markdown-pages`,
+      },
     },
-    'gatsby-transformer-remark'
+    "gatsby-transformer-remark",
   ],
 }

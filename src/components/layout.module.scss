@@ -1,27 +1,27 @@
 .container {
-    margin: 0 auto;
-    margin-left: 20rem;
-    padding-left: 5rem;
-    max-width: 750px;
-    padding-top: 3rem;
-    font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana, Helvetica,
-        sans-serif;
-    font-size: larger;
+  margin: 0 auto;
+  margin-left: 20rem;
+  padding-left: 5rem;
+  max-width: 750px;
+  padding-top: 3rem;
+  font-family: Lato, Segoe UI, Avenir, Ubuntu, Tahoma, Verdana, Helvetica,
+    sans-serif;
+  font-size: larger;
 }
 
 /* Remove the padding on content when sidebar goes to top of screen */
 @media screen and (max-width: 700px) {
-    .container {
-        margin-left: 0;
-        padding-left: 2rem;
-    }
+  .container {
+    margin-left: 0;
+    padding-left: 2rem;
+  }
 }
 
 a {
-    text-decoration: dotted underline;
-    color: #000000;
+  text-decoration: dotted underline;
+  color: #000000;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
