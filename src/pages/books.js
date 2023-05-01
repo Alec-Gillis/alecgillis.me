@@ -1,12 +1,10 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { Head } from "./index"
 
 const BooksPage = () => {
   return (
     <Layout>
-      <Head title="Books" />
       <h1>
         Woah! This is kinda empty. Quick, pretend that there's cool content.
         Come back later for real thing!{" "}
@@ -19,5 +17,7 @@ const BooksPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => <title>Books</title>
 
 export default BooksPage

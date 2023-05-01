@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import { Head } from "../pages/index"
 
 export const query = graphql`
   query ($slug: String!) {
@@ -19,7 +18,6 @@ export const query = graphql`
 const Page = (props) => {
   return (
     <Layout>
-      <Head title={props.data.markdownRemark.frontmatter.title} />
       <h1>{props.data.markdownRemark.frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{

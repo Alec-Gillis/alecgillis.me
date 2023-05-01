@@ -3,7 +3,7 @@ import React from "react"
 import Header from "./header"
 import * as layoutStyles from "./layout.module.scss"
 
-const Layout = (props) => {
+export const Layout = (props) => {
   return (
     <div>
       <Header />

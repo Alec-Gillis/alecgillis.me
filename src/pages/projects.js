@@ -1,12 +1,10 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { Head } from "./index"
 
 const ProjectsPage = () => {
   return (
     <Layout>
-      <Head title="Projects" />
       <h2>
         I am currently working at{" "}
         <a href="https://www.gocivilairpatrol.com/">Civil Air Patrol</a> as a
@@ -51,5 +49,7 @@ const ProjectsPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => <title>Projects</title>
 
 export default ProjectsPage

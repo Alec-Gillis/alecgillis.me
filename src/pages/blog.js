@@ -3,7 +3,6 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import * as blogStyles from "./blog.module.scss"
-import { Head } from "./index"
 import moment from "moment"
 import * as path from "path"
 
@@ -29,7 +28,6 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Blog" />
       <h1>Blog</h1>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges
@@ -54,5 +52,7 @@ const BlogPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => <title>Blog</title>
 
 export default BlogPage

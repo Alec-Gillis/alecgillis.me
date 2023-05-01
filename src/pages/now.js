@@ -1,12 +1,10 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { Head } from "./index"
 
 const NowPage = () => {
   return (
     <Layout>
-      <Head title="Now" />
       <p>
         This is a <a href="https://nownownow.com/about">now</a> page.
       </p>
@@ -22,5 +20,7 @@ const NowPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => <title>Now</title>
 
 export default NowPage
