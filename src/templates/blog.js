@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Head from "./index"
+import { Head } from "../pages/index"
 import moment from "moment"
 import * as path from "path"
 

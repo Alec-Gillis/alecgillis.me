@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Head from "./index"
+import { Head } from "./index"
 
 const NowPage = () => {
   return (

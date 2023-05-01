@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import blogStyles from "./blog.module.scss"
-import Head from "./index"
+import * as blogStyles from "./blog.module.scss"
+import { Head } from "./index"
 import moment from "moment"
 import * as path from "path"
 
