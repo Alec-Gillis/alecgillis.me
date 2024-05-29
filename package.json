@@ -1,32 +1,23 @@
 {
   "name": "alecgillis.me",
   "private": true,
+  "type": "module",
   "description": "Personal website & portfolio for Alec Gillis(me!)",
   "author": "Alec Gillis",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "gatsby": "^5.9.0",
-    "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-google-analytics": "^5.9.0",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-manifest": "^5.9.0",
-    "gatsby-plugin-sass": "^6.9.0",
-    "gatsby-plugin-sharp": "^5.9.0",
-    "gatsby-source-filesystem": "^5.9.0",
-    "gatsby-transformer-remark": "^6.9.0",
-    "node-sass": "^8.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@astrojs/sitemap": "3.1.5",
+    "astro": "4.9.2",
+    "@astrojs/check": "0.7.0",
+    "typescript": "5.4.5"
   },
   "devDependencies": {
     "prettier": "2.8.8"

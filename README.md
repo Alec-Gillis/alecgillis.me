@@ -1,6 +1,6 @@
 # Alec Gillis (dot me)
 
-This is the source code for [Alec Gillis dot me](https://www.alecgillis.me), a [Gatsby](https://www.gatsbyjs.org/)-powered website.
+This is the source code for [Alec Gillis dot me](https://www.alecgillis.me), an [Astro](https://astro.build/)-powered website.
 
 ## :hammer: Tools :hammer:
 
