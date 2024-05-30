@@ -1,6 +1,5 @@
 ---
 title: "Howdy"
-description: 'Stuff'
 pubDate: 'May 11 2020'
 heroImage: '/blog-placeholder-5.jpg'
 ---

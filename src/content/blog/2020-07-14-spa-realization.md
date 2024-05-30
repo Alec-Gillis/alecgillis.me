@@ -1,6 +1,5 @@
 ---
 title: "Why I Use Don't Make Single-Page Applications (For Now)"
-description: "Don't caaare"
 pubDate: "Jul 14 2020"
 heroImage: "/blog-placeholder-5.jpg"
 ---
