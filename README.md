@@ -4,9 +4,11 @@ This is the source code for [Alec Gillis dot me](https://www.alecgillis.me), an 
 
 ## :hammer: Tools :hammer:
 
-:sparkle: Node - An open-source, cross-platform JavaScript runtime environment.
+:rocket: [Astro](https://astro.build/) - A JavaScript web framework optimized for building fast, content-driven websites.
 
-:registered: npm - A JavaScript package registry
+:sparkle: [Node](https://nodejs.org/en) - An open-source, cross-platform JavaScript runtime environment.
+
+:registered: [npm](https://www.npmjs.com/) - A JavaScript package registry
 
 :zap: [Volta](https://volta.sh/) - The Hassle-Free JavaScript Tool Manager
 
