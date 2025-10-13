@@ -3,9 +3,9 @@ title: "Why I Use Don't Make Single-Page Applications (For Now)"
 pubDate: "Jul 14 2020"
 heroImage: "/blog-placeholder-5.jpg"
 ---
+
 layout: "post"
 path: "/the-realization/"
-
 
 One of the most satisfying parts of programming is the 'ah-ha!' moment epiphany. I have been learning the ins and outs of web development for the last few months and have been quite overwhelmed by the immense amount of fast-moving technologies.
 

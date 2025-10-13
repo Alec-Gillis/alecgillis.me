@@ -1,7 +1,7 @@
 ---
 title: "Howdy"
-pubDate: 'May 11 2020'
-heroImage: '/blog-placeholder-5.jpg'
+pubDate: "May 11 2020"
+heroImage: "/blog-placeholder-5.jpg"
 ---
 
 layout: "post"
