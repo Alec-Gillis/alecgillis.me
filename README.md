@@ -10,6 +10,6 @@ This is the source code for [Alec Gillis dot me](https://alecgillis.me), an [Ast
 
 :registered: [npm](https://www.npmjs.com/) - A JavaScript package registry
 
-:zap: [Volta](https://volta.sh/) - The Hassle-Free JavaScript Tool Manager
+:zap: [fnm](https://github.com/Schniz/fnm) - Fast and simple Node.js version manager
 
 :nail_care: [Prettier](https://prettier.io/) - Opinionated Code Formatter
