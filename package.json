@@ -1,17 +1,26 @@
 {
   "name": "alecgillis.me",
-  "private": true,
-  "type": "module",
-  "description": "Personal website & portfolio for Alec Gillis(me!)",
-  "author": "Alec Gillis",
   "version": "2.0.0",
+  "private": true,
+  "description": "Personal website & portfolio for Alec Gillis(me!)",
+  "bugs": {
+    "url": "https://github.com/Alec-Gillis/alecgillis.me/issues"
+  },
   "license": "MIT",
+  "author": "Alec Gillis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alec-Gillis/alecgillis.me"
+  },
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
   },
   "dependencies": {
     "@astrojs/check": "0.9.10",
@@ -20,14 +29,7 @@
     "typescript": "6.0.3"
   },
   "devDependencies": {
-    "prettier": "3.9.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Alec-Gillis/alecgillis.me"
-  },
-  "bugs": {
-    "url": "https://github.com/Alec-Gillis/alecgillis.me/issues"
+    "oxfmt": "0.61.0"
   },
   "engines": {
     "node": ">=24.15.0 <25",

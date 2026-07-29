@@ -12,4 +12,4 @@ This is the source code for [Alec Gillis dot me](https://alecgillis.me), an [Ast
 
 :zap: [fnm](https://github.com/Schniz/fnm) - Fast and simple Node.js version manager
 
-:nail_care: [Prettier](https://prettier.io/) - Opinionated Code Formatter
+:nail_care: [oxfmt](https://github.com/oxc-project/oxc/tree/main/crates/oxc_formatter) - Formatter for the JavaScript Oxidation Compiler
