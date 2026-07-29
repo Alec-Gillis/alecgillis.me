@@ -20,7 +20,7 @@
     "typescript": "5.9.3"
   },
   "devDependencies": {
-    "prettier": "3.7.1"
+    "prettier": "3.9.6"
   },
   "repository": {
     "type": "git",
