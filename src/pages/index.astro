@@ -2,7 +2,10 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ThemeAsset from '../components/ThemeAsset.astro';
 import { SITE_TITLE } from '../consts';
+import * as stylex from '@stylexjs/stylex';
+import { styles } from '../styles/siteStyles';
 ---
 
 <!doctype html>
@@ -10,19 +13,20 @@ import { SITE_TITLE } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} />
 	</head>
-	<body>
+	<body {...stylex.props(styles.body)}>
 		<Header />
-		<main>
-			<h3>Hello, I'm Alec.
-			</h3>
-			<h5>
-				I am currently working at 
-				<a href="https://www.quorum.us/">Quorum</a> as a
-				Fullstack Engineer.
-			  </h5>
+		<main {...stylex.props(styles.main)}>
+			<h3 {...stylex.props(styles.heading, styles.h3)}>Hello, I'm Alec.</h3>
+			<h5 {...stylex.props(styles.heading, styles.h5)}>
+				I am currently working at <a href="https://www.quorum.us/" {...stylex.props(styles.link)}>Quorum</a> as a Fullstack Engineer.
+			</h5>
+			<ThemeAsset
+				src="/assets/theme/orbit-dawn.jpg"
+				variant="wide"
+				loading="eager"
+			/>
 
-			<br>
-			<h5>Contact Me</h5>
+			<h5 {...stylex.props(styles.heading, styles.h5)}>Contact Me</h5>
 			<ul>
 			  <li>Email: alec.d.gillis@gmail.com</li>
 			</ul>

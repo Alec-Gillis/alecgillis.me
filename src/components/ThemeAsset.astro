@@ -1,0 +1,27 @@
+---
+import * as stylex from '@stylexjs/stylex';
+import { styles } from '../styles/siteStyles';
+
+interface Props {
+	src: string;
+	alt?: string;
+	variant?: 'wide' | 'small' | 'inline';
+	loading?: 'eager' | 'lazy';
+}
+
+const { src, alt = '', variant = 'small', loading = 'lazy' } = Astro.props;
+const variantStyle = {
+	wide: styles.themeAssetWide,
+	small: styles.themeAssetSmall,
+	inline: styles.themeAssetInline,
+}[variant];
+---
+
+<img
+	{...stylex.props(styles.themeAsset, variantStyle)}
+	src={src}
+	alt={alt}
+	loading={loading}
+	decoding="async"
+	aria-hidden={alt ? undefined : 'true'}
+/>

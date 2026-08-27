@@ -4,6 +4,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import * as stylex from '@stylexjs/stylex';
+import { styles } from '../styles/siteStyles';
 
 type Props = CollectionEntry<'blog'>['data'] & {
 	showHeroImage?: boolean;
@@ -16,62 +18,32 @@ const { title, pubDate, updatedDate, heroImage, showHeroImage = false, showMetad
 <html lang="en">
 	<head>
 		<BaseHead title={title} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
 	</head>
 
-	<body>
+	<body {...stylex.props(styles.body)}>
 		<Header />
-		<main>
+		<main {...stylex.props(styles.main)}>
 			<article>
 				{showHeroImage && heroImage && (
 					<div class="hero-image">
 						<img width={1020} height={510} src={heroImage} alt="" />
 					</div>
 				)}
-				<div class="prose">
+				<div {...stylex.props(styles.prose)}>
 					{showMetadata && (
-						<div class="title">
-							<div class="date">
+						<div {...stylex.props(styles.postTitle)}>
+							<div {...stylex.props(styles.date)}>
 								<FormattedDate date={pubDate} />
 								{
 									updatedDate && (
-										<div class="last-updated-on">
+										<div {...stylex.props(styles.updated)}>
 											Last updated on <FormattedDate date={updatedDate} />
 										</div>
 									)
 								}
 							</div>
-							<h1>{title}</h1>
-							<hr />
+							<h1 {...stylex.props(styles.heading, styles.h1, styles.postTitleHeading)}>{title}</h1>
+							<hr {...stylex.props(styles.postRule)} />
 						</div>
 					)}
 					<slot />

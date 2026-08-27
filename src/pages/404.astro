@@ -2,6 +2,8 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import * as stylex from '@stylexjs/stylex';
+import { styles } from '../styles/siteStyles';
 ---
 
 <!doctype html>
@@ -9,10 +11,10 @@ import Footer from '../components/Footer.astro';
 	<head>
 		<BaseHead title={"404 - Not Found"} />
 	</head>
-	<body>
+	<body {...stylex.props(styles.body)}>
 		<Header />
-		<main>
-			<h1>This page does not exist, but you do!</h1>
+		<main {...stylex.props(styles.main)}>
+			<h1 {...stylex.props(styles.heading, styles.h1)}>This page does not exist, but you do!</h1>
 		</main>
 		<Footer />
 	</body>
